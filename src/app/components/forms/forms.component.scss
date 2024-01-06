@@ -1,0 +1,123 @@
+form {
+  border: 2px solid var(--light-text);
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 60px;
+
+  .form-icon {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    margin-bottom: 30px;
+
+    img {
+      height: 24px;
+    }
+
+    p {
+      font-size: 14px;
+      color: var(--medium-text);
+    }
+  }
+
+  h3 {
+    font-size: 24px;
+    color: var(--medium-text);
+    font-weight: 300;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+
+  .single-input-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid var(--light-text);
+    padding: 10px 0;
+
+    p {
+      color: var(--medium-text);
+    }
+
+    .single-input {
+      display: flex;
+      gap: 10px;
+      color: var(--medium-text);
+    }
+  }
+  .show-units-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+
+    .show-units-checkbox-container {
+      border-top: 1px solid var(--light-text);
+      padding: 40px 0;
+      display: flex;
+      gap: 10px;
+    }
+    .search-results {
+      display: flex;
+      align-items: center;
+
+      span {
+        font-weight: 700;
+      }
+    }
+  }
+
+  .find-units-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    .find-units-button {
+      background-color: #ffb612;
+      color: black;
+      font-weight: 600;
+      padding: 15px 10px;
+      border: none;
+      outline: none;
+      border-radius: 4px;
+      max-width: 340px;
+      width: 100%;
+    }
+
+    .clear-button {
+      background-color: #fff;
+      color: black;
+      font-weight: 600;
+      border: 1px solid var(--light-text);
+      padding: 15px 10px;
+      outline: none;
+      border-radius: 4px;
+      max-width: 340px;
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  form {
+    .show-units-container {
+      flex-direction: column;
+
+      .show-units-checkbox-container {
+        padding: 20px 0 10px 0;
+        width: 100%;
+        justify-content: center;
+      }
+    }
+    .find-units-buttons {
+      flex-direction: column;
+
+      .find-units-button,
+      .clear-button {
+        max-width: 100%;
+      }
+    }
+  }
+}

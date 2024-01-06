@@ -24,6 +24,7 @@ header {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+    padding: 0 30px;
 
     h1 {
       font-size: 34px;
@@ -45,6 +46,17 @@ header {
       width: 100px;
       background-color: var(--dark-grey);
       display: block;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  header {
+    gap: 50px;
+    .logo-container {
+      img {
+        height: 60px;
+      }
     }
   }
 }

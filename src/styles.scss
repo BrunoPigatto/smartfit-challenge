@@ -1,6 +1,8 @@
 :root {
   --dark-grey: #333333;
   --light-grey: #808080;
+  --light-text: #e5e5e5;
+  --medium-text: #939393;
   --yellow: #ffb612;
   --red: #dc0a17;
   --green: #2fc022;
@@ -18,10 +20,16 @@ body {
   height: 100%;
 }
 
+button,
+input {
+  cursor: pointer;
+}
+
 .container {
   margin: 0 auto;
   max-width: 1120px;
   width: 100%;
+  padding: 0 30px;
 }
 
 @font-face {
