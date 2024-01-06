@@ -1,0 +1,67 @@
+<div class="container">
+  <form class="form-group" [formGroup]="formGroup">
+    <div class="form-icon">
+      <p>Horário</p>
+    </div>
+    <h3>Qual período você quer treinar?</h3>
+    <div class="inputs-container">
+      <div class="single-input-container">
+        <div class="single-input">
+          <input
+            type="radio"
+            name="hour"
+            value="morning"
+            formControlName="hour"
+          />
+          <label for="morning">Manhã</label>
+        </div>
+        <p>06:00 ás 12:00</p>
+      </div>
+      <div class="single-input-container">
+        <div class="single-input">
+          <input
+            type="radio"
+            name="hour"
+            value="afternoon"
+            formControlName="hour"
+          />
+          <label for="afternoon">Tarde</label>
+        </div>
+        <p>12:01 ás 18:00</p>
+      </div>
+      <div class="single-input-container">
+        <div class="single-input">
+          <input
+            type="radio"
+            name="hour"
+            value="night"
+            formControlName="hour"
+          />
+          <label for="nigth">Noite</label>
+        </div>
+        <p>18:01 ás 23:00</p>
+      </div>
+      <div class="show-units-container">
+        <div class="show-units-checkbox-container">
+          <input
+            type="checkbox"
+            name="showClosed"
+            formControlName="showClosed"
+          />
+          <label for="showClosed">Exibir unidades fechadas</label>
+        </div>
+        <div class="search-results">
+          <p>
+            Resultados encontrados: <span>{{ results?.length }}</span>
+          </p>
+        </div>
+      </div>
+      <div class="find-units-buttons">
+        <button class="find-units-button" (click)="onSubmit()">
+          ENCONTRAR UNIDADE
+        </button>
+        <button class="clear-button" (click)="onClear()">LIMPAR</button>
+      </div>
+    </div>
+  </form>
+</div>
