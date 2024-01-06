@@ -44,6 +44,10 @@ form {
       display: flex;
       gap: 10px;
       color: var(--medium-text);
+
+      label {
+        cursor: pointer;
+      }
     }
   }
   .show-units-container {
@@ -51,12 +55,16 @@ form {
     align-items: center;
     justify-content: space-between;
     margin-bottom: 40px;
+    border-top: 1px solid var(--light-text);
 
     .show-units-checkbox-container {
-      border-top: 1px solid var(--light-text);
       padding: 40px 0;
       display: flex;
       gap: 10px;
+    }
+
+    label {
+      cursor: pointer;
     }
     .search-results {
       display: flex;

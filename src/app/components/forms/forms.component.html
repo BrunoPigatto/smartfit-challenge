@@ -8,6 +8,7 @@
       <div class="single-input-container">
         <div class="single-input">
           <input
+            id="morning"
             type="radio"
             name="hour"
             value="morning"
@@ -20,6 +21,7 @@
       <div class="single-input-container">
         <div class="single-input">
           <input
+            id="afternoon"
             type="radio"
             name="hour"
             value="afternoon"
@@ -32,18 +34,20 @@
       <div class="single-input-container">
         <div class="single-input">
           <input
+            id="night"
             type="radio"
             name="hour"
             value="night"
             formControlName="hour"
           />
-          <label for="nigth">Noite</label>
+          <label for="night">Noite</label>
         </div>
         <p>18:01 ás 23:00</p>
       </div>
       <div class="show-units-container">
         <div class="show-units-checkbox-container">
           <input
+            id="showClosed"
             type="checkbox"
             name="showClosed"
             formControlName="showClosed"
@@ -52,7 +56,7 @@
         </div>
         <div class="search-results">
           <p>
-            Resultados encontrados: <span>{{ results?.length }}</span>
+            Resultados encontrados: <span>{{ qtdResults }}</span>
           </p>
         </div>
       </div>

@@ -3,7 +3,7 @@ export interface Schedules {
   hour: string;
 }
 
-export interface Location {
+export interface LocationUnit {
   id: number;
   title: string;
   content: string;
@@ -17,5 +17,5 @@ export interface Location {
 
 export interface UnitsResponse {
   current_country_id: number;
-  location: Location[];
+  locations: LocationUnit[];
 }

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { GetUnitsService } from '../../services/get-units.service';
+import { LocationUnit } from '../../types/units-response.interface';
 
 @Component({
   selector: 'app-forms',
@@ -10,7 +11,9 @@ import { GetUnitsService } from '../../services/get-units.service';
   styleUrl: './forms.component.scss',
 })
 export class FormsComponent implements OnInit {
-  results = [];
+  results: LocationUnit[] = [];
+  filteredResults: LocationUnit[] = [];
+  qtdResults = 0;
   formGroup!: FormGroup;
 
   constructor(
@@ -19,15 +22,28 @@ export class FormsComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    this.unitService.getAllUnits().subscribe((data) => console.log({ data }));
     this.formGroup = this.formBuilder.group({
       hour: '',
-      showClosed: false,
+      showClosed: true,
+    });
+
+    //OBS: A API fornecida é um JSON estático, que não possui filtros, por conta disso os filtros serão feitos no front
+    this.unitService.getAllUnits().subscribe((data) => {
+      this.results = data.locations;
+      this.filteredResults = this.results;
+      this.qtdResults = this.filteredResults?.length;
     });
   }
 
   onSubmit(): void {
-    console.log(this.formGroup.value);
+    if (!this.formGroup.value.showClosed) {
+      this.filteredResults = this.results.filter(
+        (location) => location.opened === true
+      );
+    } else {
+      this.filteredResults = this.results;
+    }
+    this.qtdResults = this.filteredResults?.length;
   }
 
   onClear(): void {
