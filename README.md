@@ -11,18 +11,18 @@ A Smart Fit, atuando no segmento de fitness, passou por várias mudanças durant
 
 Neste desafio, serão implementados as seguintes funcionalidades de acordo com as regras de negócio definidas:
 
-### Funcionalidades
+### Funcionalidades desenvolvidas
 
-- [x] Carrega unidades através do arquivo JSON [locations.json](https://test-frontend-developer.s3.amazonaws.com/data/locations.json) utilizando o método `GET`.
-- [x] Busca por todas as unidades.
-- [x] Busca por unidades com filtros.
+- [x] Carregar unidades através do arquivo JSON [locations.json](https://test-frontend-developer.s3.amazonaws.com/data/locations.json) utilizando o método `GET`.
+- [x] Buscar por todas as unidades.
+- [x] Buscar por unidades com filtros.
 - [x] Previsão do número de resultados encontrados.
 - [] Listagem das unidades encontradas após a busca.
 
 ### Regras de negócio
 
-- Filtra unidades abertas ou fechadas.
-- Filtra unidades por período de funcionamento.
+- Filtrar unidades abertas ou fechadas.
+- Filtrar unidades por período de funcionamento.
 - Exibe a mensagem "Nenhuma unidade encontrada" quando não há resultados.
 - Valida e exibe os ícones corretos de acordo com o status da unidade.
 
