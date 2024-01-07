@@ -18,7 +18,7 @@ Neste desafio, serão implementados as seguintes funcionalidades de acordo com a
 - [x] Buscar por unidades com filtros.
 - [x] Previsão do número de resultados encontrados.
 - [x] Listagem das unidades encontradas após a busca.
--- Trabalhando na responsividade
+- [] Responsividade.
 
 ### Regras de negócio
 
