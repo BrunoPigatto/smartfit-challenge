@@ -10,7 +10,7 @@ export interface LocationUnit {
   opened: boolean;
   mask: string;
   towel: string;
-  foutain: string;
+  fountain: string;
   locker_room: string;
   schedules: Schedules[];
 }
