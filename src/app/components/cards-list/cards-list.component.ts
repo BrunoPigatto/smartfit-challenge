@@ -10,8 +10,6 @@ import { CommonModule } from '@angular/common';
   styleUrl: './cards-list.component.scss',
   imports: [CardComponent, CommonModule],
 })
-export class CardsListComponent implements OnInit {
+export class CardsListComponent {
   @Input() unitsList: LocationUnit[] = [];
-
-  ngOnInit(): void {}
 }

@@ -12,5 +12,10 @@ import { CommonModule } from '@angular/common';
 export class CardComponent {
   @Input() card!: LocationUnit;
 
+  removeHtmlTagsAndDecode(content: string) {
+    const doc = new DOMParser().parseFromString(content, 'text/html');
+    return doc.body.textContent || '';
+  }
+
   constructor() {}
 }

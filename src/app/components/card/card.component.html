@@ -3,7 +3,7 @@
     card.opened ? "Aberto" : "Fechado"
   }}</span>
   <h2>{{ card.title }}</h2>
-  <p>{{ card.content }}</p>
+  <p>{{ removeHtmlTagsAndDecode(card.content) }}</p>
   <div class="grid-icons">
     <span
       *ngIf="card.mask || card.towel || card.fountain || card.locker_room"
