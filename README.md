@@ -2,9 +2,9 @@
 
 ![Smart Fit](./src/assets/images/svg/logo.svg)
 
-Este repositório foi desenvolvido como solução para o desafio de [Front-end da Smart Fit](https://github.com/bioritmo/front-end-code-challenge-smartsite/tree/master).
-utilizando o framework Angular.
-**Projeto online -> [Front-end Smart Fit](https://smartfit-challenge-brunopigatto.vercel.app/)
+Este repositório foi desenvolvido como solução para o desafio de [Front-end da Smart Fit](https://github.com/bioritmo/front-end-code-challenge-smartsite/tree/master)
+utilizando o framework Angular.  
+**PROJETO ONLINE ->** [Front-end Smart Fit](https://smartfit-challenge-brunopigatto.vercel.app/)
 
 ## 📖 Sobre o desafio
 
