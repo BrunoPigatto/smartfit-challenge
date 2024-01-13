@@ -8,9 +8,16 @@ ul {
   display: grid;
   grid-template-columns: repeat(auto-fill, 340px);
   align-items: stretch;
+  justify-content: center;
   gap: 20px;
 }
 
 li {
   height: 100%;
+}
+
+@media (max-width: 575px) {
+  ul {
+    grid-template-columns: repeat(auto-fill, 100%);
+  }
 }
