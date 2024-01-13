@@ -2,8 +2,9 @@
 
 ![Smart Fit](./src/assets/images/svg/logo.svg)
 
-Este repositório está sendo desenvolvido como solução para o desafio de [Front-end da Smart Fit](https://github.com/bioritmo/front-end-code-challenge-smartsite/tree/master).
+Este repositório foi desenvolvido como solução para o desafio de [Front-end da Smart Fit](https://github.com/bioritmo/front-end-code-challenge-smartsite/tree/master).
 utilizando o framework Angular.
+**Projeto online -> [Front-end Smart Fit](https://smartfit-challenge-brunopigatto.vercel.app/)
 
 ## 📖 Sobre o desafio
 
@@ -18,7 +19,7 @@ Neste desafio, serão implementados as seguintes funcionalidades de acordo com a
 - [x] Buscar por unidades com filtros.
 - [x] Previsão do número de resultados encontrados.
 - [x] Listagem das unidades encontradas após a busca.
-- [] Responsividade.
+- [x] Responsividade.
 
 ### Regras de negócio
 
